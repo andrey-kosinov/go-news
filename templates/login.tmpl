@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Аутентификация</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+	<style type="text/css">
+		body { font-family:'Roboto' !important; }
+	</style>
+
+</head>
+<body class="bg-gray-200">
+	<div class="max-w-screen-sm mx-auto mt-20 bg-white px-8 py-6 rounded-lg shadow-xl">
+		<h1 class="text-2xl block mb-4">Аутентификация</h1>
+		<form action="/login" method="post">
+			<div class="mb-4">
+				<label for="login" class="block text-sm text-gray-700 mb-1">Логин:</label>
+				<input type="text" name="login" class="block bg-white border border-gray-300 rounded-lg py-2 px-4">
+			</div>
+			<div class="mb-4">
+				<label for="password" class="block text-sm text-gray-700 mb-1">Пароль:</label>
+				<input type="password" name="password" class="block bg-white border border-gray-300 rounded-lg py-2 px-4">
+			</div>
+			<div class="mb-6">
+				<button type="submit" class="bg-black text-white py-2 px-4 rounded-lg hover:bg-green-500">Войти</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
